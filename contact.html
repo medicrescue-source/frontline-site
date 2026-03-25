@@ -36,7 +36,7 @@ and identify automation opportunities that may improve operational efficiency.
 </div>
 </section>
 
-<form action="https://formspree.io/f/xojpqqry" method="POST">
+<form action="https://formspree.io/f/xojpqqry?success=true" method="POST">
 
 <input type="hidden" name="_redirect" value="https://frontlinehealthdigital.com/thankyou.html">
 <input type="hidden" name="_subject" value="New Healthcare Consultation Lead">
@@ -116,6 +116,12 @@ Get My Free Healthcare Growth Audit
 <div class="ribbon">
 <a href="#">🚑 Free Healthcare Digital Audit Available</a>
 </div>
+
+  <script>
+if (window.location.search.includes("success=true")) {
+window.location.href = "/thankyou.html";
+}
+</script>
 
 </body>
 </html>
