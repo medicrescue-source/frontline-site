@@ -208,7 +208,34 @@ text-align:center;
 font-size:18px;
 padding:18px 40px;
 }
+.contact-card select{
+width:100%;
+padding:16px;
+border-radius:10px;
+border:1px solid rgba(255,255,255,.15);
+background:rgba(0,0,0,.3);
+color:white;
+font-size:15px;
+appearance:none;
+-webkit-appearance:none;
+-moz-appearance:none;
+cursor:pointer;
+}
 
+/* Dropdown arrow */
+
+.contact-card select{
+background-image:url("data:image/svg+xml;charset=UTF-8,%3Csvg fill='white' height='20' viewBox='0 0 20 20' width='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 7l5 5 5-5z'/%3E%3C/svg%3E");
+background-repeat:no-repeat;
+background-position:right 15px center;
+background-size:16px;
+}
+
+/* Fix dropdown options (some browsers) */
+.contact-card select option{
+background:#0b1220;
+color:white;
+}
 /* MOBILE */
 
 @media(max-width:700px){
