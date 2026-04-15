@@ -5,11 +5,12 @@
 <link rel="stylesheet" href="style.css">
 <script defer src="script.js"></script>
 <style>
+/* TIMELINE */
 .timeline {
   max-width: 800px;
-  margin: 40px auto 0;
+  margin: 60px auto 0;
   position: relative;
-  padding-left: 30px;
+  padding-left: 32px;
 }
 
 .timeline::before {
@@ -19,74 +20,79 @@
   top: 0;
   bottom: 0;
   width: 3px;
-  background: linear-gradient(to bottom, #e63946, #457b9d);
+  background: linear-gradient(to bottom, #2563eb, #06b6d4);
   border-radius: 3px;
 }
 
 .timeline-item {
   position: relative;
-  margin-bottom: 36px;
+  margin-bottom: 40px;
   padding-left: 24px;
 }
 
 .timeline-item::before {
   content: '';
   position: absolute;
-  left: -34px;
+  left: -38px;
   top: 6px;
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  background: #e63946;
-  border: 2px solid #fff;
-  box-shadow: 0 0 0 2px #e63946;
+  background: #06b6d4;
+  border: 2px solid #0b1220;
+  box-shadow: 0 0 0 2px #06b6d4;
 }
 
 .timeline-year {
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #e63946;
+  color: #06b6d4;
   margin-bottom: 4px;
 }
 
 .timeline-item h3 {
   font-size: 1rem;
   font-weight: 700;
-  margin: 0 0 4px;
+  margin: 0 0 6px;
+  color: white;
 }
 
 .timeline-item p {
   font-size: 0.92rem;
-  opacity: 0.8;
+  opacity: 0.75;
   margin: 0;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
+/* STAT STRIP */
 .stat-strip {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
-  margin-top: 40px;
-}
-
-.stat-strip .stat {
-  text-align: center;
+  gap: 60px;
+  margin-top: 50px;
 }
 
 .stat-strip .stat h2 {
-  font-size: 2.8rem;
+  font-size: 3rem;
   font-weight: 800;
-  color: #e63946;
+  color: #06b6d4;
   margin: 0;
 }
 
 .stat-strip .stat p {
   font-size: 0.85rem;
-  opacity: 0.75;
-  margin: 4px 0 0;
+  opacity: 0.65;
+  margin: 6px 0 0;
+}
+
+@media(max-width: 700px) {
+  .stat-strip { gap: 32px; }
+  .timeline { padding-left: 24px; }
+  .timeline-item { padding-left: 18px; }
+  .timeline-item::before { left: -30px; }
 }
 </style>
 </head>
@@ -96,7 +102,6 @@
 <nav>
 <div class="container">
 <span class="logo">Frontline Healthcare Digital</span>
-
 <ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="services.html">Services</a></li>
@@ -108,62 +113,70 @@
 </nav>
 
 <!-- HERO -->
-
 <section class="hero">
 <div class="container">
-
 <h1>Healthcare Experience Meets<br>Modern Digital Strategy</h1>
-
-<p style="max-width:650px;opacity:.85;">
+<p style="max-width:650px;opacity:.85;margin-top:16px;">
 Built by someone who ran calls, managed billing systems, and maintained CAD infrastructure —
 not by a marketing agency that read about healthcare.
 </p>
-
 <a class="btn" href="contact.html">Schedule Consultation</a>
-
 </div>
 </section>
 
-<!-- MISSION -->
-
+<!-- MISSION + STATS -->
 <section class="section center">
 <div class="container">
 
 <h2>Our Mission</h2>
-
-<p style="max-width:750px;margin:auto;opacity:.8;">
+<p style="max-width:750px;margin:20px auto 0;opacity:.8;">
 To empower healthcare organizations with modern digital tools and workflow insights that improve visibility,
 responsiveness, and long-term operational efficiency — built on direct experience from the field to the billing department.
 </p>
 
+<div class="stat-strip">
+  <div class="stat">
+    <h2>30+</h2>
+    <p>Years in EMS & Healthcare</p>
+  </div>
+  <div class="stat">
+    <h2>24hr</h2>
+    <p>Audit Response Time</p>
+  </div>
+  <div class="stat">
+    <h2>4</h2>
+    <p>Step Audit Process</p>
+  </div>
+</div>
+
+</div>
 </section>
 
 <!-- FOUNDER STORY -->
-
 <section class="section left">
 <div class="container">
 
 <h2>About Frontline Healthcare Digital</h2>
 
-<p style="max-width:950px;opacity:.8;">
+<p style="max-width:950px;opacity:.8;margin-top:24px;line-height:1.8;">
 Frontline Healthcare Digital was built from the inside out — not by a marketing agency that learned about healthcare,
 but by someone who lived and worked in it for over 30 years.
 </p>
 
-<p style="max-width:950px;opacity:.8;">
+<p style="max-width:950px;opacity:.8;margin-top:20px;line-height:1.8;">
 That means understanding what it actually takes to run a shift, reconcile a billing cycle, maintain a CAD system,
 and keep an agency's operations aligned across disconnected platforms. Most people who build healthcare websites
 have never touched an ePCR. Most people who understand ambulance billing have never run a call.
 We've done both — and everything in between.
 </p>
 
-<p style="max-width:950px;opacity:.8;">
+<p style="max-width:950px;opacity:.8;margin-top:20px;line-height:1.8;">
 Frontline Healthcare Digital exists because EMS agencies and healthcare organizations are being underserved digitally —
 not for lack of options, but because the people building their workflows and websites don't understand
 what actually happens on a shift, inside a billing department, or across a CAD system.
 </p>
 
-<p style="max-width:950px;font-weight:700;">
+<p style="max-width:950px;margin-top:20px;font-weight:700;font-size:1.1rem;color:#06b6d4;">
 We do.
 </p>
 
@@ -171,11 +184,10 @@ We do.
 </section>
 
 <!-- TIMELINE -->
-
 <section class="section">
 <div class="container">
 
-<h2>A Career Built on the Front Lines</h2>
+<h2 style="text-align:center;">A Career Built on the Front Lines</h2>
 
 <div class="timeline">
 
@@ -188,7 +200,7 @@ We do.
   <div class="timeline-item">
     <div class="timeline-year">1996</div>
     <h3>Career EMT</h3>
-    <p>Transitioned to a full-time EMS role, deepening hands-on patient care experience across high-volume operations.</p>
+    <p>Transitioned to full-time EMS, deepening hands-on patient care experience across high-volume operations.</p>
   </div>
 
   <div class="timeline-item">
@@ -239,7 +251,6 @@ We do.
 </section>
 
 <!-- DIFFERENTIATORS -->
-
 <section class="section">
 <div class="container">
 
@@ -273,13 +284,12 @@ We do.
 </section>
 
 <!-- CTA -->
-
 <section class="section center">
 <div class="container">
 
 <h2>Let's Modernize Your Digital Strategy</h2>
 
-<p style="max-width:600px;margin:auto 0 24px;opacity:.8;">
+<p style="max-width:600px;margin:20px auto 0;opacity:.8;line-height:1.7;">
 Start with a free audit. No obligation — just a clear picture of where your digital presence
 and workflows stand today, and what's possible.
 </p>
