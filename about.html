@@ -4,6 +4,91 @@
 <title>About | Frontline Healthcare Digital</title>
 <link rel="stylesheet" href="style.css">
 <script defer src="script.js"></script>
+<style>
+.timeline {
+  max-width: 800px;
+  margin: 40px auto 0;
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, #e63946, #457b9d);
+  border-radius: 3px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 36px;
+  padding-left: 24px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -34px;
+  top: 6px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #e63946;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px #e63946;
+}
+
+.timeline-year {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #e63946;
+  margin-bottom: 4px;
+}
+
+.timeline-item h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+
+.timeline-item p {
+  font-size: 0.92rem;
+  opacity: 0.8;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.stat-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.stat-strip .stat {
+  text-align: center;
+}
+
+.stat-strip .stat h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #e63946;
+  margin: 0;
+}
+
+.stat-strip .stat p {
+  font-size: 0.85rem;
+  opacity: 0.75;
+  margin: 4px 0 0;
+}
+</style>
 </head>
 
 <body>
@@ -17,6 +102,7 @@
 <li><a href="services.html">Services</a></li>
 <li><a href="about.html">About</a></li>
 <li><a href="contact.html">Contact</a></li>
+<li><a href="ems.html">EMS</a></li>
 </ul>
 </div>
 </nav>
@@ -29,8 +115,8 @@
 <h1>Healthcare Experience Meets<br>Modern Digital Strategy</h1>
 
 <p style="max-width:650px;opacity:.85;">
-We specialize in helping healthcare organizations modernize digital presence,
-improve operational clarity, and implement practical automation strategies that support growth.
+Built by someone who ran calls, managed billing systems, and maintained CAD infrastructure —
+not by a marketing agency that read about healthcare.
 </p>
 
 <a class="btn" href="contact.html">Schedule Consultation</a>
@@ -41,25 +127,136 @@ improve operational clarity, and implement practical automation strategies that 
 <!-- MISSION -->
 
 <section class="section center">
-
 <div class="container">
 
 <h2>Our Mission</h2>
 
 <p style="max-width:750px;margin:auto;opacity:.8;">
 To empower healthcare organizations with modern digital tools and workflow insights that improve visibility,
-responsiveness, and long-term operational efficiency.
+responsiveness, and long-term operational efficiency — built on direct experience from the field to the billing department.
+</p>
+
+<div class="stat-strip">
+  <div class="stat">
+    <h2>30+</h2>
+    <p>Years in EMS & Healthcare</p>
+  </div>
+  <div class="stat">
+    <h2>24hr</h2>
+    <p>Audit Response Time</p>
+  </div>
+  <div class="stat">
+    <h2>4</h2>
+    <p>Step Audit Process</p>
+  </div>
+</div>
+
+</div>
+</section>
+
+<!-- FOUNDER STORY -->
+
+<section class="section left">
+<div class="container">
+
+<h2>About Frontline Healthcare Digital</h2>
+
+<p style="max-width:950px;opacity:.8;">
+Frontline Healthcare Digital was built from the inside out — not by a marketing agency that learned about healthcare,
+but by someone who lived and worked in it for over 30 years.
+</p>
+
+<p style="max-width:950px;opacity:.8;">
+That means understanding what it actually takes to run a shift, reconcile a billing cycle, maintain a CAD system,
+and keep an agency's operations aligned across disconnected platforms. Most people who build healthcare websites
+have never touched an ePCR. Most people who understand ambulance billing have never run a call.
+We've done both — and everything in between.
+</p>
+
+<p style="max-width:950px;opacity:.8;">
+Frontline Healthcare Digital exists because EMS agencies and healthcare organizations are being underserved digitally —
+not for lack of options, but because the people building their workflows and websites don't understand
+what actually happens on a shift, inside a billing department, or across a CAD system.
+</p>
+
+<p style="max-width:950px;font-weight:700;">
+We do.
 </p>
 
 </div>
-
 </section>
-  
+
+<!-- TIMELINE -->
+
+<section class="section">
+<div class="container">
+
+<h2>A Career Built on the Front Lines</h2>
+
+<div class="timeline">
+
+  <div class="timeline-item">
+    <div class="timeline-year">1990</div>
+    <h3>Volunteer Firefighter / EMT</h3>
+    <p>Began serving the community as a volunteer first responder — the foundation of everything that followed.</p>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-year">1996</div>
+    <h3>Career EMT</h3>
+    <p>Transitioned to a full-time EMS role, deepening hands-on patient care experience across high-volume operations.</p>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-year">2000</div>
+    <h3>Full-Time Paramedic & IT — 3rd Largest Ambulance Service in Pennsylvania</h3>
+    <p>Advanced to paramedic while simultaneously maintaining the organization's computer network and website —
+    an early sign that field experience and technology weren't separate worlds.</p>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-year">2005</div>
+    <h3>Information Systems Officer</h3>
+    <p>Took full ownership of technology infrastructure: CAD software, third-party ambulance billing systems,
+    EDI workflows, documentation cycles, and the operational dependencies that tie them all together.</p>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-year">2016</div>
+    <h3>Retired from the Field — Joined emsChart</h3>
+    <p>After retiring from active field duty, joined emsChart — a web-based patient care reporting platform
+    built specifically for EMS — bringing operational credibility to a product used by agencies nationwide.</p>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-year">2019</div>
+    <h3>Independent Consulting</h3>
+    <p>Expanded expertise beyond EMS through consulting engagements with a financial institution
+    and an electrical utility company — broadening operational and process improvement skills.</p>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-year">2024</div>
+    <h3>Product Support Analyst — EMS Billing Platform</h3>
+    <p>Returned to the EMS billing world as a Product Support Analyst for the same billing platform
+    used in the field for years — staying current with the systems EMS agencies depend on daily.</p>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-year">Today</div>
+    <h3>Frontline Healthcare Digital</h3>
+    <p>Bringing 30+ years of field, systems, and billing experience to help EMS agencies and
+    healthcare organizations close the digital gaps that impact visibility, revenue, and operations.</p>
+  </div>
+
+</div>
+
+</div>
+</section>
 
 <!-- DIFFERENTIATORS -->
 
 <section class="section">
-
 <div class="container">
 
 <h2>Why Healthcare Organizations Choose Us</h2>
@@ -67,60 +264,45 @@ responsiveness, and long-term operational efficiency.
 <div class="services">
 
 <div class="card">
-<h3>Operational Understanding</h3>
-<p>Familiarity with healthcare documentation, intake coordination, and service workflows.</p>
+<h3>Real Field Experience</h3>
+<p>From volunteer EMT to career paramedic — we understand what EMS operations actually look like from the inside.</p>
 </div>
 
 <div class="card">
-<h3>Product & Technology Experience</h3>
-<p>Experience supporting delivery of modern digital platforms and technology initiatives.</p>
+<h3>Billing & EDI Knowledge</h3>
+<p>Direct experience with ambulance billing workflows, third-party billing software, and EDI transaction processes.</p>
 </div>
 
 <div class="card">
-<h3>Automation Strategy Focus</h3>
-<p>Practical implementation guidance rather than theoretical recommendations.</p>
+<h3>CAD & Systems Depth</h3>
+<p>Hands-on ownership of CAD platforms, ePCR systems, and the integrations that keep agencies running.</p>
 </div>
 
 <div class="card">
-<h3>Growth-Oriented Mindset</h3>
-<p>Strategies designed to support sustainable visibility and service demand.</p>
+<h3>Practical, Not Theoretical</h3>
+<p>Every recommendation is grounded in how healthcare organizations actually operate — not how they look on paper.</p>
 </div>
 
 </div>
 
 </div>
-
-</section>
-
-<!-- APPROACH -->
-
-<section class="section center">
-
-<div class="container">
-
-<h2>Our Approach</h2>
-
-<p style="max-width:700px;margin:auto;opacity:.8;">
-We focus on clarity, measurable improvements, and realistic implementation strategies.
-Technology should simplify operations — not introduce unnecessary complexity.
-</p>
-
-</div>
-
 </section>
 
 <!-- CTA -->
 
 <section class="section center">
-
 <div class="container">
 
-<h2>Let’s Modernize Your Digital Strategy</h2>
+<h2>Let's Modernize Your Digital Strategy</h2>
+
+<p style="max-width:600px;margin:auto 0 24px;opacity:.8;">
+Start with a free audit. No obligation — just a clear picture of where your digital presence
+and workflows stand today, and what's possible.
+</p>
 
 <a class="btn" href="contact.html">Request Free Audit</a>
 
 </div>
-
 </section>
 
 <footer>
